@@ -2,7 +2,7 @@ bl_info = {
     "name": "Low Poly Deer Tutorial",
     "author": "Indy's Roxon",
     "version": (1, 0, 0),
-    "blender": (3, 0, 0),
+    "blender": (5, 0, 0),
     "location": "N-Panel > Low Poly Deer",
     "description": "Interactive step-by-step tutorial for low poly character modeling",
     "category": "Tutorials",
@@ -11,7 +11,7 @@ bl_info = {
 import bpy
 import os
 from bpy.types import Panel, Operator, PropertyGroup
-from bpy.props import IntProperty, BoolVectorProperty, StringProperty
+from bpy.props import IntProperty, StringProperty
 
 # ============================================================================
 # TUTORIAL DATA - All 42 steps with complete information
@@ -315,16 +315,30 @@ TUTORIAL_STEPS = [
 ]
 
 # ============================================================================
+# HELPER FUNCTIONS - Store progress as binary string (workaround for Blender 5.2)
+# ============================================================================
+
+def encode_progress(bool_list):
+    """Encode list of 42 booleans as a binary string"""
+    binary = ''.join('1' if b else '0' for b in bool_list)
+    return binary
+
+def decode_progress(binary_str):
+    """Decode binary string back to list of 42 booleans"""
+    if not binary_str or len(binary_str) != 42:
+        return [False] * 42
+    return [c == '1' for c in binary_str]
+
+# ============================================================================
 # PROPERTY GROUP FOR PERSISTENT STEP TRACKING
 # ============================================================================
 
 class TutorialStepProperties(PropertyGroup):
     """Store completed steps per file"""
-    completed_steps: BoolVectorProperty(
+    completed_steps_binary: StringProperty(
         name="Completed Steps",
-        description="Track which tutorial steps have been completed",
-        size=42,
-        default=(False,) * 42
+        description="Track which tutorial steps have been completed (binary string)",
+        default="000000000000000000000000000000000000000000"
     )
     current_step: IntProperty(
         name="Current Step",
@@ -353,9 +367,9 @@ class LPDT_OT_toggle_step(Operator):
     
     def execute(self, context):
         props = context.scene.lpdt_props
-        completed = list(props.completed_steps)
+        completed = decode_progress(props.completed_steps_binary)
         completed[self.step_index] = not completed[self.step_index]
-        props.completed_steps = tuple(completed)
+        props.completed_steps_binary = encode_progress(completed)
         return {'FINISHED'}
 
 class LPDT_OT_set_current_step(Operator):
@@ -379,7 +393,7 @@ class LPDT_OT_reset_progress(Operator):
     
     def execute(self, context):
         props = context.scene.lpdt_props
-        props.completed_steps = (False,) * 42
+        props.completed_steps_binary = "000000000000000000000000000000000000000000"
         props.current_step = 1
         self.report({'INFO'}, "Tutorial progress reset")
         return {'FINISHED'}
@@ -424,6 +438,7 @@ class LPDT_PT_tutorial_panel(Panel):
     def draw(self, context):
         layout = self.layout
         props = context.scene.lpdt_props
+        completed = decode_progress(props.completed_steps_binary)
         
         # ====== HEADER ======
         box = layout.box()
@@ -517,7 +532,7 @@ class LPDT_PT_tutorial_panel(Panel):
         
         # ====== STEP COMPLETION ======
         col = layout.column(align=True)
-        is_complete = props.completed_steps[props.current_step - 1]
+        is_complete = completed[props.current_step - 1]
         
         icon = 'CHECKBOX_HLT' if is_complete else 'CHECKBOX_DEHLT'
         text = "✓ Completed" if is_complete else "☐ Mark Complete"
@@ -526,20 +541,29 @@ class LPDT_PT_tutorial_panel(Panel):
         
         # ====== PROGRESS SUMMARY ======
         box = layout.box()
-        completed_count = sum(props.completed_steps)
+        completed_count = sum(completed)
         progress_pct = int((completed_count / len(TUTORIAL_STEPS)) * 100)
         
         box.label(text=f"Progress: {completed_count}/{len(TUTORIAL_STEPS)} ({progress_pct}%)", icon='DRIVER')
-        box.prop(context.scene.lpdt_props, 'completed_steps', text="")
         
-        # ====== STEP LIST (COLLAPSED BY DEFAULT) ======
+        # Progress bar visualization
+        row = box.row()
+        row.scale_x = 1.0
+        row.scale_y = 0.5
+        for i in range(42):
+            if completed[i]:
+                row.label(text="█", icon='NONE')
+            else:
+                row.label(text="░", icon='NONE')
+        
+        # ====== STEP LIST ======
         box = layout.box()
         box.label(text="Step Navigator", icon='SEQ_STRIP_DUPLICATE')
         
         col = box.column(align=True)
         for i, tutorial_step in enumerate(TUTORIAL_STEPS):
             row = col.row(align=True)
-            icon = 'CHECKBOX_HLT' if props.completed_steps[i] else 'BLANK1'
+            icon = 'CHECKBOX_HLT' if completed[i] else 'BLANK1'
             is_current = (i + 1) == props.current_step
             emboss = not is_current
             
