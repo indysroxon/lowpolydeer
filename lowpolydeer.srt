@@ -1,0 +1,3474 @@
+1
+00:00:01,000 --> 00:00:02,800
+In this video, we'll be making a low poly animal.
+
+2
+00:00:02,800 --> 00:00:05,000
+You can apply this technique to almost any animal,
+
+3
+00:00:05,000 --> 00:00:07,700
+and I've got pre-lined up reference sheets
+that you can download for free.
+
+4
+00:00:07,700 --> 00:00:09,800
+Now this is a beginner tutorial,
+
+5
+00:00:09,800 --> 00:00:12,800
+but if it's a bit too fast, then do check out
+my complete beginner's guide.
+
+6
+00:00:12,800 --> 00:00:15,000
+I won't be covering the advanced techniques,
+
+7
+00:00:15,000 --> 00:00:17,400
+like rigging and posing,
+which you can see here,
+
+8
+00:00:17,400 --> 00:00:19,900
+but I do have a video about that
+in my members' area.
+
+9
+00:00:19,900 --> 00:00:22,400
+Alternatively, you could grab
+the fully-rigged animal
+
+10
+00:00:22,400 --> 00:00:24,700
+from my winter asset pack giveaway.
+
+11
+00:00:24,700 --> 00:00:26,600
+That's coming soon, so look out for that.
+
+12
+00:00:26,600 --> 00:00:28,800
+If you do like my content,
+then check out the links in the description
+
+13
+00:00:28,800 --> 00:00:32,800
+to my other playlists
+and my methodical and popular courses,
+
+14
+00:00:32,800 --> 00:00:34,800
+particularly the low poly character course,
+
+15
+00:00:34,800 --> 00:00:37,800
+where we do these same techniques
+but in more detail.
+
+16
+00:00:37,800 --> 00:00:40,500
+So let's get started making our low poly animal.
+
+17
+00:00:40,500 --> 00:00:42,500
+So I'm in a new start-up file just here.
+
+18
+00:00:42,500 --> 00:00:44,500
+I've got my screencast keys down the bottom right here,
+
+19
+00:00:44,500 --> 00:00:46,200
+so you can see what I'm pressing.
+
+20
+00:00:46,200 --> 00:00:47,700
+And just as a quick reminder,
+
+21
+00:00:47,700 --> 00:00:50,000
+middle mouse button will move
+or rotate around the middle point here,
+
+22
+00:00:50,000 --> 00:00:52,200
+use the wheel of your mouse to zoom in and out,
+
+23
+00:00:52,200 --> 00:00:55,200
+and Shift + middle mouse button will strafe around.
+
+24
+00:00:55,200 --> 00:00:58,000
+So let's start by bringing in my reference images.
+
+25
+00:00:58,000 --> 00:01:00,500
+I've drawn out a simple stag just here,
+
+26
+00:01:00,500 --> 00:01:02,300
+and you can download this image from my Gumroad,
+
+27
+00:01:02,300 --> 00:01:03,800
+link in the description,
+
+28
+00:01:03,800 --> 00:01:05,800
+or you can find any image of an animal,
+
+29
+00:01:05,800 --> 00:01:08,700
+ideally the side view is the one that's the most important,
+
+30
+00:01:08,700 --> 00:01:10,300
+as that's the image we trace around,
+
+31
+00:01:10,300 --> 00:01:12,300
+and you can kind of get away without the front view.
+
+32
+00:01:12,300 --> 00:01:14,200
+Alternatively, you can take a screenshot of my screen now,
+
+33
+00:01:14,200 --> 00:01:16,300
+if you don't want to go through the effort of downloading it.
+
+34
+00:01:16,300 --> 00:01:18,300
+Once you've got the file in your file browser,
+
+35
+00:01:18,300 --> 00:01:21,500
+you can click and drag that into Blender, like so.
+
+36
+00:01:21,500 --> 00:01:23,800
+And I'll minimize my file browser,
+and you can see it just there.
+
+37
+00:01:23,800 --> 00:01:26,000
+It comes in perpendicular to your camera,
+
+38
+00:01:26,000 --> 00:01:28,300
+so you just need to press Alt + G,
+and that removes any grabbing or movement,
+
+39
+00:01:28,300 --> 00:01:31,000
+and Alt + R to remove any rotation.
+
+40
+00:01:31,000 --> 00:01:33,300
+So we've got it right in the middle of our scene there.
+
+41
+00:01:33,300 --> 00:01:37,200
+I'll press R X 90 to rotate around the X-axis 90 degrees,
+
+42
+00:01:37,200 --> 00:01:38,500
+and press Enter.
+
+43
+00:01:38,500 --> 00:01:40,200
+Do remember you've got your Cartesian coordinates up here
+
+44
+00:01:40,200 --> 00:01:42,200
+if you're confused about which axis is which.
+
+45
+00:01:42,200 --> 00:01:45,000
+And now we're in the right position for front view, just here,
+
+46
+00:01:45,000 --> 00:01:47,700
+and I want front view looking down the Y-axis like this,
+
+47
+00:01:47,700 --> 00:01:49,500
+that's what we generally call front view.
+
+48
+00:01:49,500 --> 00:01:52,200
+And you can see that in the Cartesian coordinates here,
+
+49
+00:01:52,200 --> 00:01:55,200
+we want to look at the positive Y going away from us.
+
+50
+00:01:55,200 --> 00:01:57,000
+So that's front view just there.
+
+51
+00:01:57,000 --> 00:01:58,800
+Now I need to position it.
+
+52
+00:01:58,800 --> 00:02:01,000
+I can press 1 on my keyboard or press on the
+
+53
+00:02:01,000 --> 00:02:03,000
+-Y axis here to go to front view,
+
+54
+00:02:03,000 --> 00:02:05,800
+and now I can press G to grab to move that into position.
+
+55
+00:02:05,800 --> 00:02:08,000
+Although it's tricky for me to see through my cube,
+
+56
+00:02:08,000 --> 00:02:10,200
+so I'll just go to X-ray mode up the top here,
+
+57
+00:02:10,200 --> 00:02:12,200
+shortcut key is Alt + Z,
+
+58
+00:02:12,200 --> 00:02:14,200
+and I can now see through my objects.
+
+59
+00:02:14,200 --> 00:02:16,000
+And if I zoom in a bit,
+
+60
+00:02:16,000 --> 00:02:19,000
+you can see that I can't see the grid behind my reference image.
+
+61
+00:02:19,000 --> 00:02:20,800
+To solve that problem, we can go down to the
+
+62
+00:02:20,800 --> 00:02:22,800
+Object Data Properties.
+
+63
+00:02:22,800 --> 00:02:24,200
+Do make sure you've got your reference selected,
+
+64
+00:02:24,200 --> 00:02:25,800
+Object Data Properties,
+
+65
+00:02:25,800 --> 00:02:28,000
+turn Opacity on, and I'll turn this down to 0.2,
+
+66
+00:02:28,000 --> 00:02:30,200
+so we can nice and easily see the grid just there.
+
+67
+00:02:30,200 --> 00:02:32,800
+I'll press G to grab and move that above the floor.
+
+68
+00:02:32,800 --> 00:02:36,000
+And I want the middle of my stag to be right in the center.
+
+69
+00:02:36,000 --> 00:02:38,500
+Center of my scene is indicated by the 3D Cursor there.
+
+70
+00:02:38,500 --> 00:02:40,200
+If for any reason you've moved that,
+
+71
+00:02:40,200 --> 00:02:42,200
+so Shift + right click will move your 3D Cursor,
+
+72
+00:02:42,200 --> 00:02:45,000
+press Shift + S and go to Cursor to World Origin
+
+73
+00:02:45,000 --> 00:02:47,000
+to move it back into the center like that.
+
+74
+00:02:47,000 --> 00:02:49,000
+And now I might need to zoom in a little bit, and press G to grab
+
+75
+00:02:49,000 --> 00:02:51,500
+in the X-axis to move that across slightly,
+
+76
+00:02:51,500 --> 00:02:53,800
+and I'll hold down Shift for smaller increments,
+
+77
+00:02:53,800 --> 00:02:56,000
+and I can find the center somewhere around there.
+
+78
+00:02:56,000 --> 00:02:58,000
+And I'm looking at the face.
+
+79
+00:02:58,000 --> 00:03:00,000
+It's a little bit off around the legs,
+
+80
+00:03:00,000 --> 00:03:02,000
+but the face is probably going to be more important.
+
+81
+00:03:02,000 --> 00:03:04,500
+Okay, so middle mouse button to come out of front view,
+
+82
+00:03:04,500 --> 00:03:06,800
+and I've got my reference image set up there.
+
+83
+00:03:06,800 --> 00:03:09,200
+I'll press G then Y to move it backwards,
+
+84
+00:03:09,200 --> 00:03:12,000
+so I'm modeling in front where the cube is just here.
+
+85
+00:03:12,000 --> 00:03:14,000
+So you might want to pause the video, catch up with me,
+
+86
+00:03:14,000 --> 00:03:15,800
+bringing in your reference and placing the front view
+
+87
+00:03:15,800 --> 00:03:18,200
+so it's facing forward in our scene.
+
+88
+00:03:18,200 --> 00:03:20,000
+Pause the video and catch up.
+
+89
+00:03:20,000 --> 00:03:22,000
+Okay, so I need to duplicate this
+
+90
+00:03:22,000 --> 00:03:24,200
+and bring it to the side over here,
+
+91
+00:03:24,200 --> 00:03:26,000
+so I've got my side view.
+
+92
+00:03:26,000 --> 00:03:28,000
+So I'll go to top view for this with 7 on my numpad,
+
+93
+00:03:28,000 --> 00:03:30,000
+remember you can click on the Z-axis up here,
+
+94
+00:03:30,000 --> 00:03:32,800
+and I'll press Shift + D to duplicate and move that over to the side here.
+
+95
+00:03:32,800 --> 00:03:35,000
+So I've now got two reference images,
+
+96
+00:03:35,000 --> 00:03:37,000
+I just need to rotate this around the Z-axis,
+
+97
+00:03:37,000 --> 00:03:39,000
+and it should be 90 degrees, so R Z 90,
+
+98
+00:03:39,000 --> 00:03:41,000
+and it's gone counter-clockwise,
+
+99
+00:03:41,000 --> 00:03:42,800
+and it's in the right position now,
+
+100
+00:03:42,800 --> 00:03:45,000
+so facing forward like our reference here.
+
+101
+00:03:45,000 --> 00:03:47,200
+And I'll go to side view now with 3 on my numpad,
+
+102
+00:03:47,200 --> 00:03:49,800
+or click on the X-axis just here,
+
+103
+00:03:49,800 --> 00:03:52,000
+and I can now line this up.
+
+104
+00:03:52,000 --> 00:03:54,000
+It doesn't really matter too much where you have this,
+
+105
+00:03:54,000 --> 00:03:56,500
+but just make sure you press G then Y so it stays
+
+106
+00:03:56,500 --> 00:03:58,800
+the same height as the other one,
+
+107
+00:03:58,800 --> 00:04:00,500
+then they'll line up with each other,
+
+108
+00:04:00,500 --> 00:04:03,000
+and I just want it in front of the cube, like so.
+
+109
+00:04:03,000 --> 00:04:05,200
+So you've got your two reference images like this,
+
+110
+00:04:05,200 --> 00:04:07,000
+and we're ready to start modeling in front.
+
+111
+00:04:07,000 --> 00:04:09,000
+What I will do though is just bring down the Outliner,
+
+112
+00:04:09,000 --> 00:04:11,500
+and show you that you've got these two references just here.
+
+113
+00:04:11,500 --> 00:04:13,800
+I can name these by double-clicking on them, this one is "Front",
+
+114
+00:04:13,800 --> 00:04:16,000
+and the other one is called "Side",
+
+115
+00:04:16,000 --> 00:04:17,200
+nice and simple.
+
+116
+00:04:17,200 --> 00:04:18,500
+Now with both of them selected,
+
+117
+00:04:18,500 --> 00:04:20,500
+and I can select them both in the scene by Shift + left clicking,
+
+118
+00:04:20,500 --> 00:04:22,500
+and I've got both of them selected there,
+
+119
+00:04:22,500 --> 00:04:24,200
+I can move them to a new collection,
+
+120
+00:04:24,200 --> 00:04:26,000
+so M to move to New Collection,
+
+121
+00:04:26,000 --> 00:04:28,200
+and I'll call these "Reference", or "Ref" for short,
+
+122
+00:04:28,200 --> 00:04:29,800
+and create.
+
+123
+00:04:29,800 --> 00:04:31,000
+That way, it's nice and easy,
+
+124
+00:04:31,000 --> 00:04:32,500
+I bring down the Outliner again,
+
+125
+00:04:32,500 --> 00:04:34,800
+I can easily hide them and show them again,
+
+126
+00:04:34,800 --> 00:04:37,000
+or I can hide one or the other with the eye just there.
+
+127
+00:04:37,000 --> 00:04:38,500
+Okay, you might want to pause the video and catch up with me,
+
+128
+00:04:38,500 --> 00:04:40,500
+copying the side view and placing that in position,
+
+129
+00:04:40,500 --> 00:04:43,000
+and putting them both into a collection called References.
+
+130
+00:04:43,000 --> 00:04:45,000
+Pause the video and catch up.
+
+131
+00:04:45,000 --> 00:04:47,000
+Okay, so now we're ready for modeling.
+
+132
+00:04:47,000 --> 00:04:48,200
+So I can click on my cube,
+
+133
+00:04:48,200 --> 00:04:50,000
+go to side view, so I'm going to model
+
+134
+00:04:50,000 --> 00:04:53,000
+from side view and trace around the deer, just here.
+
+135
+00:04:53,000 --> 00:04:55,000
+So side view again, you can click on the X-axis here,
+
+136
+00:04:55,000 --> 00:04:57,000
+or numpad 3, and I'm in side view.
+
+137
+00:04:57,000 --> 00:04:59,800
+And I press G to grab and move that upwards into position,
+
+138
+00:04:59,800 --> 00:05:02,000
+and S to scale to scale it down.
+
+139
+00:05:02,000 --> 00:05:05,200
+So I'm roughly around this sort of chest area, just here.
+
+140
+00:05:05,200 --> 00:05:07,500
+Now in order to edit the cube, I want to be in Edit Mode,
+
+141
+00:05:07,500 --> 00:05:09,800
+so I need to go to the mode up here, the Object Mode,
+
+142
+00:05:09,800 --> 00:05:11,500
+and change that to Edit Mode.
+
+143
+00:05:11,500 --> 00:05:13,800
+And you'll see I can now edit the vertices,
+
+144
+00:05:13,800 --> 00:05:16,000
+edges, or faces, just there,
+
+145
+00:05:16,000 --> 00:05:18,000
+and that's 1, 2, and 3 on your keyboard,
+
+146
+00:05:18,000 --> 00:05:19,200
+not your numpad this time.
+
+147
+00:05:19,200 --> 00:05:21,000
+To start off with, I'm going to start with vertices,
+
+148
+00:05:21,000 --> 00:05:23,000
+so I can press 1,
+
+149
+00:05:23,000 --> 00:05:25,200
+and I can now select my different vertices.
+
+150
+00:05:25,200 --> 00:05:26,500
+However, if I go to side view now,
+
+151
+00:05:26,500 --> 00:05:29,000
+press 3 on my numpad to go to side view,
+
+152
+00:05:29,000 --> 00:05:31,000
+and left click on this vertex here,
+
+153
+00:05:31,000 --> 00:05:33,000
+notice it's actually clicked just the front one
+
+154
+00:05:33,000 --> 00:05:34,300
+and not the back one.
+
+155
+00:05:34,300 --> 00:05:36,500
+That's why it's important, if I go back to front view,
+
+156
+00:05:36,500 --> 00:05:38,500
+to box select like this.
+
+157
+00:05:38,500 --> 00:05:40,200
+And if I box select, that selects the one behind
+
+158
+00:05:40,200 --> 00:05:42,000
+as well, as long as you are
+
+159
+00:05:42,000 --> 00:05:44,000
+in X-ray mode or Wireframe mode,
+
+160
+00:05:44,000 --> 00:05:45,500
+he's very similar.
+
+161
+00:05:45,500 --> 00:05:47,200
+But we'll stay in X-ray mode for now.
+
+162
+00:05:47,200 --> 00:05:49,000
+Back to side view, box select both those two,
+
+163
+00:05:49,000 --> 00:05:51,000
+I'll zoom in a bit, I'll press G to grab
+
+164
+00:05:51,000 --> 00:05:53,000
+and move that up so it's in line with the top there,
+
+165
+00:05:53,000 --> 00:05:55,000
+then box select the bottom, move that up,
+
+166
+00:05:55,000 --> 00:05:57,500
+and move that so it's kind of in line along there.
+
+167
+00:05:57,500 --> 00:05:59,800
+These ones here, again, box select,
+
+168
+00:05:59,800 --> 00:06:01,800
+always make sure you're box selecting, G to grab,
+
+169
+00:06:01,800 --> 00:06:03,800
+to move it into position and move it
+
+170
+00:06:03,800 --> 00:06:05,200
+to the front of the leg there.
+
+171
+00:06:05,200 --> 00:06:07,000
+This one, G to grab,
+
+172
+00:06:07,000 --> 00:06:09,000
+and into this position here.
+
+173
+00:06:09,000 --> 00:06:11,000
+Okay, so I'm ready to add some more
+
+174
+00:06:11,000 --> 00:06:13,800
+topology or faces to my shape here.
+
+175
+00:06:13,800 --> 00:06:16,000
+So I need to extrude this area outwards.
+
+176
+00:06:16,000 --> 00:06:18,000
+In order to do that, I need to go to Face Mode up here
+
+177
+00:06:18,000 --> 00:06:20,000
+and select the end face here.
+
+178
+00:06:20,000 --> 00:06:22,000
+Again, box selecting is the easiest way to do that,
+
+179
+00:06:22,000 --> 00:06:24,200
+as it's sometimes a bit tricky to get them exactly.
+
+180
+00:06:24,200 --> 00:06:26,200
+But I've got my end face here, I can now press E to extrude,
+
+181
+00:06:26,200 --> 00:06:28,000
+and that brings out a new face like this.
+
+182
+00:06:28,000 --> 00:06:30,200
+And then I can bring it out this way, R to rotate,
+
+183
+00:06:30,200 --> 00:06:32,800
+and then I need to move the top and bottom vertices.
+
+184
+00:06:32,800 --> 00:06:35,000
+So, 1 to go to Vertex Mode,
+
+185
+00:06:35,000 --> 00:06:37,200
+select the bottom vertices with box select, G to grab,
+
+186
+00:06:37,200 --> 00:06:39,000
+move those into position, top ones here,
+
+187
+00:06:39,000 --> 00:06:41,000
+again, always box select,
+
+188
+00:06:41,000 --> 00:06:43,000
+so you're selecting the background one as well,
+
+189
+00:06:43,000 --> 00:06:45,000
+and I'm moving it into position.
+
+190
+00:06:45,000 --> 00:06:47,000
+Now you might have said, "Well, why don't you with all of them
+
+191
+00:06:47,000 --> 00:06:49,000
+selected, just scale them down?"
+
+192
+00:06:49,000 --> 00:06:51,000
+Well, that will actually scale them inwards as well,
+
+193
+00:06:51,000 --> 00:06:53,000
+and we don't want to do that just yet.
+
+194
+00:06:53,000 --> 00:06:55,000
+So you have to watch out for that, we're trying to keep this flat.
+
+195
+00:06:55,000 --> 00:06:58,000
+So back to side view, and I want to extrude these out to the end.
+
+196
+00:06:58,000 --> 00:07:00,000
+Now in terms of the distance, if I select these
+
+197
+00:07:00,000 --> 00:07:02,000
+endpoints here, and then go to Face Mode,
+
+198
+00:07:02,000 --> 00:07:03,800
+that will select the end face,
+
+199
+00:07:03,800 --> 00:07:05,800
+I can press E to extrude and bring that out.
+
+200
+00:07:05,800 --> 00:07:08,000
+Now in terms of distance, how many times you extrude out,
+
+201
+00:07:08,000 --> 00:07:11,000
+try and follow along with me in terms of the distance I'm covering,
+
+202
+00:07:11,000 --> 00:07:13,800
+and we tend to have a fairly big distance to start off with,
+
+203
+00:07:13,800 --> 00:07:16,000
+and then we add vertices as we need them later on,
+
+204
+00:07:16,000 --> 00:07:18,500
+and I'll take you through that process.
+
+205
+00:07:18,500 --> 00:07:20,800
+For now, let's press G to grab and bring that back
+
+206
+00:07:20,800 --> 00:07:22,800
+to where the leg starts, there,
+
+207
+00:07:22,800 --> 00:07:25,000
+rotate that slightly and move it into position,
+
+208
+00:07:25,000 --> 00:07:27,000
+and I've managed to get them in both the same place,
+
+209
+00:07:27,000 --> 00:07:29,200
+E to extrude, so we'll have one out here
+
+210
+00:07:29,200 --> 00:07:30,800
+in the middle of the leg,
+
+211
+00:07:30,800 --> 00:07:33,000
+back to Vertex Mode with 1, box select,
+
+212
+00:07:33,000 --> 00:07:35,000
+G to grab and move that into position,
+
+213
+00:07:35,000 --> 00:07:37,000
+and then again, last one, E to extrude out to here,
+
+214
+00:07:37,000 --> 00:07:39,000
+and I'll box select these ones,
+
+215
+00:07:39,000 --> 00:07:41,200
+move those into position, roughly at the top of the tail just there.
+
+216
+00:07:41,200 --> 00:07:43,500
+Okay, so that's extruding out to the back,
+
+217
+00:07:43,500 --> 00:07:45,000
+and I'll do the front as well,
+
+218
+00:07:45,000 --> 00:07:47,000
+so I'll select these, E to extrude, bring those out,
+
+219
+00:07:47,000 --> 00:07:49,000
+G to grab, and I'll rotate them slightly,
+
+220
+00:07:49,000 --> 00:07:51,200
+and then start moving them in, so it kind of curves up to the head,
+
+221
+00:07:51,200 --> 00:07:53,800
+back to Face Mode with 3, so again, you can choose Face Mode
+
+222
+00:07:53,800 --> 00:07:55,800
+or Vertex Mode up here if you can't remember the shortcuts,
+
+223
+00:07:55,800 --> 00:07:58,000
+E to extrude, bring that up, move that into position,
+
+224
+00:07:58,000 --> 00:08:00,000
+Vertex Mode with 1, box select, G to grab.
+
+225
+00:08:00,000 --> 00:08:02,000
+Now I've got a big gap here, so I'm probably going to need another
+
+226
+00:08:02,000 --> 00:08:04,500
+loop cut in here eventually, but I'll talk about that in just a moment.
+
+227
+00:08:04,500 --> 00:08:06,800
+And then back to Face Mode, select this face, E to extrude,
+
+228
+00:08:06,800 --> 00:08:09,000
+we might want a little bit more topology around the head,
+
+229
+00:08:09,000 --> 00:08:11,000
+so by topology, I mean more faces,
+
+230
+00:08:11,000 --> 00:08:13,000
+so I'll rotate that round, G to grab,
+
+231
+00:08:13,000 --> 00:08:15,000
+and then into Vertex Mode and select those,
+
+232
+00:08:15,000 --> 00:08:17,000
+like so. They're quite close together here,
+
+233
+00:08:17,000 --> 00:08:19,000
+so again, we'll need some more topology in there in a moment,
+
+234
+00:08:19,000 --> 00:08:21,000
+back to Face Mode, select this face, E to extrude out,
+
+235
+00:08:21,000 --> 00:08:23,000
+G to grab, and again, 1 to go to Vertex Mode,
+
+236
+00:08:23,000 --> 00:08:25,000
+and move that into position. Last one,
+
+237
+00:08:25,000 --> 00:08:28,000
+E to extrude out, and we'll move those into position.
+
+238
+00:08:28,000 --> 00:08:30,200
+So something like there is absolutely fine,
+
+239
+00:08:30,200 --> 00:08:32,800
+getting the basic shape to start off with,
+
+240
+00:08:32,800 --> 00:08:35,000
+and we're only doing the body at the moment,
+
+241
+00:08:35,000 --> 00:08:37,000
+we'll do the legs later on, and you'll see why
+
+242
+00:08:37,000 --> 00:08:39,000
+as we go through. So you might want to pause the video, catch up with me,
+
+243
+00:08:39,000 --> 00:08:41,200
+creating the body of the stag.
+
+244
+00:08:41,200 --> 00:08:43,000
+Okay, so what have we got so far?
+
+245
+00:08:43,000 --> 00:08:45,000
+If I move around my object, you can see
+
+246
+00:08:45,000 --> 00:08:47,200
+we've got this strange body of the stag,
+
+247
+00:08:47,200 --> 00:08:49,000
+and it's a good starting point.
+
+248
+00:08:49,000 --> 00:08:51,000
+If I go back to side view, notice how I have two faces
+
+249
+00:08:51,000 --> 00:08:53,000
+for the leg down here, that's quite handy,
+
+250
+00:08:53,000 --> 00:08:55,000
+because I can create a nice round shape for the legs.
+
+251
+00:08:55,000 --> 00:08:57,000
+So I want another loop cut going in here,
+
+252
+00:08:57,000 --> 00:08:59,000
+and by loop cut, I mean these edges that loop around,
+
+253
+00:08:59,000 --> 00:09:01,000
+like so. So if I go into perspective view,
+
+254
+00:09:01,000 --> 00:09:03,000
+like this, I can add in a loop cut by pressing Ctrl + R,
+
+255
+00:09:03,000 --> 00:09:05,000
+and that gives me this yellow loop that goes around my object.
+
+256
+00:09:05,000 --> 00:09:08,000
+I can then choose where I want that loop to go,
+
+257
+00:09:08,000 --> 00:09:10,000
+and I want it in the middle of the leg, just here,
+
+258
+00:09:10,000 --> 00:09:12,000
+so left click to set that, it asks you where you want it
+
+259
+00:09:12,000 --> 00:09:14,000
+within that area, and you can just actually right click
+
+260
+00:09:14,000 --> 00:09:16,000
+at this point to keep it in the center.
+
+261
+00:09:16,000 --> 00:09:18,000
+So that kind of cancels any of that movement.
+
+262
+00:09:18,000 --> 00:09:20,000
+Okay, back to side view with 3, and I've now got that in position.
+
+263
+00:09:20,000 --> 00:09:22,000
+I might just box select these, and move them very slightly,
+
+264
+00:09:22,000 --> 00:09:24,200
+so we've got more of a curve there,
+
+265
+00:09:24,200 --> 00:09:26,000
+and this one down very slightly,
+
+266
+00:09:26,000 --> 00:09:28,000
+and this one towards the front of the leg.
+
+267
+00:09:28,000 --> 00:09:30,000
+So we can bring out the leg from there,
+
+268
+00:09:30,000 --> 00:09:31,800
+and bring out the leg from here.
+
+269
+00:09:31,800 --> 00:09:33,800
+I did say we want a loop cut across here again,
+
+270
+00:09:33,800 --> 00:09:36,000
+I can press Ctrl + R from side view and do that there.
+
+271
+00:09:36,000 --> 00:09:38,000
+Again, I can move my mouse around to say where I want it,
+
+272
+00:09:38,000 --> 00:09:40,000
+left click once to set where the loop cut goes,
+
+273
+00:09:40,000 --> 00:09:42,000
+and then right click to cancel any movement,
+
+274
+00:09:42,000 --> 00:09:44,000
+and I can then box select and move these into position slightly.
+
+275
+00:09:44,000 --> 00:09:46,500
+Last one, we want an extra one around the head here,
+
+276
+00:09:46,500 --> 00:09:48,800
+so Ctrl + R to do a loop cut around there.
+
+277
+00:09:48,800 --> 00:09:50,800
+Double left click does the same thing,
+
+278
+00:09:50,800 --> 00:09:52,800
+so left click to set where I want the loop cut,
+
+279
+00:09:52,800 --> 00:09:55,000
+and then left click again to set the position.
+
+280
+00:09:55,000 --> 00:09:57,000
+And I can box select these ones up here and bring them up to there,
+
+281
+00:09:57,000 --> 00:09:59,000
+and these ones down here, I'll just bring those up slightly
+
+282
+00:09:59,000 --> 00:10:00,500
+into position.
+
+283
+00:10:00,500 --> 00:10:02,500
+So that's great, and we've got our base of the model.
+
+284
+00:10:02,500 --> 00:10:04,500
+So you might want to pause the video there, catch up with me,
+
+285
+00:10:04,500 --> 00:10:07,000
+making sure you've got the outline of the body shape and the head, just there.
+
+286
+00:10:07,000 --> 00:10:09,000
+So the next thing we want to do is cut our shape in half,
+
+287
+00:10:09,000 --> 00:10:11,000
+so we only need to work on one side,
+
+288
+00:10:11,000 --> 00:10:13,000
+and use a Mirror Modifier to copy that side
+
+289
+00:10:13,000 --> 00:10:14,500
+to the other side.
+
+290
+00:10:14,500 --> 00:10:16,500
+So in order to cut the shape in half,
+
+291
+00:10:16,500 --> 00:10:18,500
+we need a loop cut going down the middle.
+
+292
+00:10:18,500 --> 00:10:20,500
+So I'll press Ctrl + R, and there's my loop cut
+
+293
+00:10:20,500 --> 00:10:22,000
+going down the middle.
+
+294
+00:10:22,000 --> 00:10:23,800
+I'll just come round to here so you can see it more easily,
+
+295
+00:10:23,800 --> 00:10:26,000
+Ctrl + R, loop cut down the middle,
+
+296
+00:10:26,000 --> 00:10:28,000
+left click once to say where you want the loop cut,
+
+297
+00:10:28,000 --> 00:10:30,000
+and then again, left click to set the position.
+
+298
+00:10:30,000 --> 00:10:32,000
+Let me accidentally move it slightly and left click just there,
+
+299
+00:10:32,000 --> 00:10:34,000
+it's slightly off center and that's not going
+
+300
+00:10:34,000 --> 00:10:36,000
+to work for us in this particular situation.
+
+301
+00:10:36,000 --> 00:10:38,000
+So you can either undo that and try it again,
+
+302
+00:10:38,000 --> 00:10:40,000
+or you can come down to the dialog box here,
+
+303
+00:10:40,000 --> 00:10:42,200
+and the Factor, just there, you can see it should be
+
+304
+00:10:42,200 --> 00:10:44,000
+at zero, so I'll select that,
+
+305
+00:10:44,000 --> 00:10:46,000
+change it to zero, and it's right down the center now.
+
+306
+00:10:46,000 --> 00:10:48,000
+So now I want to delete half my shape.
+
+307
+00:10:48,000 --> 00:10:50,000
+So I can go up to the top here, select Faces,
+
+308
+00:10:50,000 --> 00:10:52,500
+and box select all the faces at the back here,
+
+309
+00:10:52,500 --> 00:10:54,500
+as you can see there.
+
+310
+00:10:54,500 --> 00:10:56,500
+And then press Delete, and then Faces.
+
+311
+00:10:56,500 --> 00:10:58,800
+So that deletes all my faces, and I've got
+
+312
+00:10:58,800 --> 00:11:00,500
+half my shape there.
+
+313
+00:11:00,500 --> 00:11:03,000
+So now I can add my Mirror Modifier to create the other half.
+
+314
+00:11:03,000 --> 00:11:05,000
+So we go to the Modifiers just here,
+
+315
+00:11:05,000 --> 00:11:07,000
+so the spanner, or the wrench if you're American,
+
+316
+00:11:07,000 --> 00:11:09,000
+Add Modifier, and then just start typing in "Mirror",
+
+317
+00:11:09,000 --> 00:11:11,000
+and it will search for Mirror just there,
+
+318
+00:11:11,000 --> 00:11:12,800
+it's under the Generate.
+
+319
+00:11:12,800 --> 00:11:14,800
+So I'll click on the Mirror just there, and you can see
+
+320
+00:11:14,800 --> 00:11:16,500
+it's created the other half.
+
+321
+00:11:16,500 --> 00:11:18,500
+We're still in X-ray view, I can press Alt + Z
+
+322
+00:11:18,500 --> 00:11:20,000
+so you can see that more easily,
+
+323
+00:11:20,000 --> 00:11:21,800
+and that's looking nice.
+
+324
+00:11:21,800 --> 00:11:23,800
+Now, the Mirror Modifier, you can see over here,
+
+325
+00:11:23,800 --> 00:11:25,800
+it defaults to the X-axis.
+
+326
+00:11:25,800 --> 00:11:27,800
+That's why we often model with the X-axis
+
+327
+00:11:27,800 --> 00:11:29,800
+going across, because lots of the modifiers
+
+328
+00:11:29,800 --> 00:11:31,500
+will default to X like this.
+
+329
+00:11:31,500 --> 00:11:33,800
+We can also, to help us, turn on Clipping, just here,
+
+330
+00:11:33,800 --> 00:11:36,000
+to make sure it sticks together in the middle.
+
+331
+00:11:36,000 --> 00:11:38,000
+If I keep that unticked for the moment,
+
+332
+00:11:38,000 --> 00:11:40,000
+and go to Vertex Mode, select this vertex here and press G to grab,
+
+333
+00:11:40,000 --> 00:11:42,200
+you can split it apart like that.
+
+334
+00:11:42,200 --> 00:11:44,000
+I'll undo that, and I'll turn Clipping on,
+
+335
+00:11:44,000 --> 00:11:46,000
+and press G to grab, and now I can't move it,
+
+336
+00:11:46,000 --> 00:11:48,000
+I can only move it in the Y and Z axes,
+
+337
+00:11:48,000 --> 00:11:49,500
+not the X-axis.
+
+338
+00:11:49,500 --> 00:11:51,200
+So that's very helpful.
+
+339
+00:11:51,200 --> 00:11:53,000
+So now what we need to do is create some legs
+
+340
+00:11:53,000 --> 00:11:55,000
+that can come down from the body.
+
+341
+00:11:55,000 --> 00:11:57,000
+Now you might be thinking, I can select the faces
+
+342
+00:11:57,000 --> 00:11:59,000
+at the bottom, so go to Face Mode with 3,
+
+343
+00:11:59,000 --> 00:12:01,000
+select these faces just here,
+
+344
+00:12:01,000 --> 00:12:03,000
+and then E to extrude and bring them down.
+
+345
+00:12:03,000 --> 00:12:05,000
+But obviously, the faces are joined together
+
+346
+00:12:05,000 --> 00:12:07,000
+in the middle, so that's not working.
+
+347
+00:12:07,000 --> 00:12:09,000
+What I need to do instead is undo that,
+
+348
+00:12:09,000 --> 00:12:11,000
+and create another loop cut going around the middle here,
+
+349
+00:12:11,000 --> 00:12:13,000
+and then I can bring the faces down.
+
+350
+00:12:13,000 --> 00:12:15,000
+Before we do that though, it might be a good idea to
+
+351
+00:12:15,000 --> 00:12:17,000
+select all these faces at the very end here,
+
+352
+00:12:17,000 --> 00:12:19,000
+let's actually go to X-ray mode for that, it's much easier,
+
+353
+00:12:19,000 --> 00:12:21,000
+again, select all those faces there,
+
+354
+00:12:21,000 --> 00:12:22,800
+that will select the outside faces,
+
+355
+00:12:22,800 --> 00:12:25,000
+go to front view with 1, or again, click the Cartesian coordinates,
+
+356
+00:12:25,000 --> 00:12:27,000
+just make sure I'm lined up with the edge
+
+357
+00:12:27,000 --> 00:12:29,000
+of the body just there, so G then X,
+
+358
+00:12:29,000 --> 00:12:31,000
+move that out so I've got the furthest point just there,
+
+359
+00:12:31,000 --> 00:12:33,000
+and then I can start bringing all these in, in a moment.
+
+360
+00:12:33,000 --> 00:12:35,000
+So I need a loop cut going down the middle here,
+
+361
+00:12:35,000 --> 00:12:37,000
+so I can extrude some faces on the outside.
+
+362
+00:12:37,000 --> 00:12:39,000
+I'll show you what that looks like, so Ctrl + R to do a loop cut,
+
+363
+00:12:39,000 --> 00:12:41,000
+left click to set the position, right click to cancel any movement,
+
+364
+00:12:41,000 --> 00:12:43,000
+and you can see the Factor is zero there.
+
+365
+00:12:43,000 --> 00:12:44,800
+I'll just minimize this dialog box, it's in the way.
+
+366
+00:12:44,800 --> 00:12:46,500
+And now I can go to Face Mode with 3,
+
+367
+00:12:46,500 --> 00:12:48,000
+I'll just turn off X-ray views,
+
+368
+00:12:48,000 --> 00:12:50,000
+so we can see that a bit more easily,
+
+369
+00:12:50,000 --> 00:12:52,000
+select these faces just here, you might want to go to
+
+370
+00:12:52,000 --> 00:12:54,000
+side view, just to make sure you've got the correct faces
+
+371
+00:12:54,000 --> 00:12:55,500
+lining up with your leg.
+
+372
+00:12:55,500 --> 00:12:57,500
+I'm just showing you what it looks like from this position,
+
+373
+00:12:57,500 --> 00:13:00,000
+and I can press E to extrude to bring that down,
+
+374
+00:13:00,000 --> 00:13:02,000
+and that's creating some legs now.
+
+375
+00:13:02,000 --> 00:13:04,000
+Let's go to side view so we can start lining those up.
+
+376
+00:13:04,000 --> 00:13:06,000
+I can actually press S to scale now,
+
+377
+00:13:06,000 --> 00:13:08,000
+to bring them in a little bit, and you can see
+
+378
+00:13:08,000 --> 00:13:10,000
+they're coming in slightly there, back to side view,
+
+379
+00:13:10,000 --> 00:13:12,000
+and then I can extrude these out.
+
+380
+00:13:12,000 --> 00:13:14,000
+I'll go back to X-ray view, so I can see the shape more easily,
+
+381
+00:13:14,000 --> 00:13:16,000
+into Vertex Mode, and I can box select the vertices,
+
+382
+00:13:16,000 --> 00:13:18,000
+and move them into position.
+
+383
+00:13:18,000 --> 00:13:20,000
+And then again, back to Face Mode to select them all
+
+384
+00:13:20,000 --> 00:13:22,000
+and extrude them out.
+
+385
+00:13:22,000 --> 00:13:24,000
+And I can rotate them round, E to extrude,
+
+386
+00:13:24,000 --> 00:13:26,000
+scale these up very slightly,
+
+387
+00:13:26,000 --> 00:13:28,000
+so I'm just creating a bit of a lump for the leg,
+
+388
+00:13:28,000 --> 00:13:30,000
+E to extrude, scale them down,
+
+389
+00:13:30,000 --> 00:13:32,000
+E to extrude, scale down,
+
+390
+00:13:32,000 --> 00:13:34,000
+slightly in the middle somewhere around there,
+
+391
+00:13:34,000 --> 00:13:36,000
+and E to extrude, scale it up,
+
+392
+00:13:36,000 --> 00:13:38,000
+and remember R to rotate if you need to,
+
+393
+00:13:38,000 --> 00:13:40,000
+E to extrude, scale this up,
+
+394
+00:13:40,000 --> 00:13:42,000
+and rotate those around slightly,
+
+395
+00:13:42,000 --> 00:13:44,000
+E to extrude, scale those down,
+
+396
+00:13:44,000 --> 00:13:47,000
+and you can actually press here, S Z 0,
+
+397
+00:13:47,000 --> 00:13:49,000
+to flatten them all out.
+
+398
+00:13:49,000 --> 00:13:51,000
+So it's scaling in the Z-axis, which is up and down,
+
+399
+00:13:51,000 --> 00:13:53,000
+zero, so they're all flattened.
+
+400
+00:13:53,000 --> 00:13:55,000
+I can now scale it out slightly, and move that to the front, like so,
+
+401
+00:13:55,000 --> 00:13:57,000
+and make sure it's on the floor.
+
+402
+00:13:57,000 --> 00:13:59,000
+Let's see what that looks like, it's not too bad,
+
+403
+00:13:59,000 --> 00:14:01,000
+it's a bit wide at the moment, but we'll sort that out in a moment.
+
+404
+00:14:01,000 --> 00:14:03,000
+Let's do the same for the back,
+
+405
+00:14:03,000 --> 00:14:05,000
+you might want to challenge yourself to extrude out the back leg.
+
+406
+00:14:05,000 --> 00:14:07,000
+So first catch up with me, creating the front leg,
+
+407
+00:14:07,000 --> 00:14:09,000
+and then have a go at doing the back leg for yourself.
+
+408
+00:14:09,000 --> 00:14:11,000
+Pause the video and have a go at that.
+
+409
+00:14:11,000 --> 00:14:13,000
+Okay, so I'll select these two faces here,
+
+410
+00:14:13,000 --> 00:14:15,000
+I'll go to side view now, 3 on my numpad,
+
+411
+00:14:15,000 --> 00:14:17,000
+E to extrude, bring that down, and scale it in,
+
+412
+00:14:17,000 --> 00:14:19,000
+and move it backwards slightly.
+
+413
+00:14:19,000 --> 00:14:21,000
+I can scale in the Y as well, to constrain
+
+414
+00:14:21,000 --> 00:14:23,000
+that scaling to the Y-axis, and bring that in,
+
+415
+00:14:23,000 --> 00:14:25,000
+so it doesn't go too thin, probably about right,
+
+416
+00:14:25,000 --> 00:14:27,000
+and again, back to side view, and extrude out.
+
+417
+00:14:27,000 --> 00:14:29,000
+I'll go back to X-ray view, so I can see the shape more easily,
+
+418
+00:14:29,000 --> 00:14:31,000
+into Vertex Mode, and I can box select the vertices,
+
+419
+00:14:31,000 --> 00:14:33,000
+and move them into position, and then again,
+
+420
+00:14:33,000 --> 00:14:35,000
+back to Face Mode to select them all and extrude them out.
+
+421
+00:14:35,000 --> 00:14:37,000
+And I'll speed this footage up now.
+
+422
+00:14:37,000 --> 00:14:39,000
+So I've got this basic shape here,
+
+423
+00:14:39,000 --> 00:14:41,000
+and it's turning out relatively good.
+
+424
+00:14:41,000 --> 00:14:43,000
+Now it's a case of adding a bit more shape to the body.
+
+425
+00:14:43,000 --> 00:14:45,000
+So I'll turn off X-ray mode with Alt + Z,
+
+426
+00:14:45,000 --> 00:14:47,000
+and I need some topology in the middle here,
+
+427
+00:14:47,000 --> 00:14:49,000
+so I can start bringing the top edges
+
+428
+00:14:49,000 --> 00:14:51,000
+and the bottom edges in, so I can get that curve.
+
+429
+00:14:51,000 --> 00:14:53,000
+So Ctrl + R to do a loop cut across the middle,
+
+430
+00:14:53,000 --> 00:14:55,000
+and we'll start off with just one, left click,
+
+431
+00:14:55,000 --> 00:14:57,000
+and left click again to set the position,
+
+432
+00:14:57,000 --> 00:14:58,800
+or right click to cancel.
+
+433
+00:14:58,800 --> 00:15:01,000
+And now I can start thinking about moving my faces into position.
+
+434
+00:15:01,000 --> 00:15:03,000
+We'll start off with the legs, and we'll get them in a relatively similar position.
+
+435
+00:15:03,000 --> 00:15:05,000
+So from front view, Alt + Z to get to X-ray mode,
+
+436
+00:15:05,000 --> 00:15:07,000
+select all the legs here, G to grab
+
+437
+00:15:07,000 --> 00:15:09,000
+in the X-axis, and bring those in, somewhere around there.
+
+438
+00:15:09,000 --> 00:15:11,000
+Now the back legs might be a little bit wider, so I can
+
+439
+00:15:11,000 --> 00:15:13,000
+deselect some faces by Ctrl + box selecting
+
+440
+00:15:13,000 --> 00:15:15,000
+some faces like this. Oh, I'm in Edge Mode, not Face Mode,
+
+441
+00:15:15,000 --> 00:15:17,000
+it doesn't matter too much, but I'll go back to Face Mode,
+
+442
+00:15:17,000 --> 00:15:19,000
+so it only selects those faces, and I need to bring those out slightly,
+
+443
+00:15:19,000 --> 00:15:21,000
+so G then X to bring them out.
+
+444
+00:15:21,000 --> 00:15:23,000
+I'll go to front view so you can see how far out I'm going.
+
+445
+00:15:23,000 --> 00:15:25,000
+I didn't draw these in in my reference,
+
+446
+00:15:25,000 --> 00:15:27,000
+but probably somewhere around here for the back legs there.
+
+447
+00:15:27,000 --> 00:15:28,800
+That looks good.
+
+448
+00:15:28,800 --> 00:15:31,000
+The whole face we want to bring in,
+
+449
+00:15:31,000 --> 00:15:33,000
+the face and the neck, and we can see from this point here
+
+450
+00:15:33,000 --> 00:15:35,000
+in my reference image, so this point just here,
+
+451
+00:15:35,000 --> 00:15:37,000
+which is up to I think roughly around there,
+
+452
+00:15:37,000 --> 00:15:39,000
+don't panic if you don't get it perfect,
+
+453
+00:15:39,000 --> 00:15:41,000
+I'll just Ctrl + box select these,
+
+454
+00:15:41,000 --> 00:15:43,000
+go to front view, so about right, and G then X
+
+455
+00:15:43,000 --> 00:15:45,000
+to bring those in. Now just be careful here,
+
+456
+00:15:45,000 --> 00:15:47,000
+I'm going fairly close to the middle,
+
+457
+00:15:47,000 --> 00:15:49,000
+I don't want this line to touch the middle.
+
+458
+00:15:49,000 --> 00:15:51,000
+If I do that, I'll press G then X, don't follow along with this,
+
+459
+00:15:51,000 --> 00:15:53,000
+and bring that into the middle, it's now stuck,
+
+460
+00:15:53,000 --> 00:15:55,000
+and we've got this strange triangle here, and we've got these extra
+
+461
+00:15:55,000 --> 00:15:57,000
+faces which you can actually click on in the middle here,
+
+462
+00:15:57,000 --> 00:15:59,000
+which are a bit of a pain, so we would have to unclip things and pull them back out,
+
+463
+00:15:59,000 --> 00:16:01,000
+that's a bit awkward. I'll undo that with Ctrl + Z,
+
+464
+00:16:01,000 --> 00:16:03,000
+and just bring them in so they're fairly close, so G then X
+
+465
+00:16:03,000 --> 00:16:05,000
+to the middle there, so you've got that small face in the middle,
+
+466
+00:16:05,000 --> 00:16:07,000
+I'll just go to front view so we can see how close we are.
+
+467
+00:16:07,000 --> 00:16:09,000
+And now I'll select these ones here,
+
+468
+00:16:09,000 --> 00:16:11,000
+let me see how far down we can go,
+
+469
+00:16:11,000 --> 00:16:13,000
+Ctrl + deselect these ones,
+
+470
+00:16:13,000 --> 00:16:15,000
+and Ctrl + deselect these ones as well,
+
+471
+00:16:15,000 --> 00:16:17,000
+and I want to bring these in now, so again, to front view,
+
+472
+00:16:17,000 --> 00:16:19,000
+G to grab, move those in, I might rotate as well,
+
+473
+00:16:19,000 --> 00:16:21,000
+so it slowly comes up from the bottom like that,
+
+474
+00:16:21,000 --> 00:16:23,000
+so I've got a slow taper in, like so,
+
+475
+00:16:23,000 --> 00:16:25,000
+that's not too bad.
+
+476
+00:16:25,000 --> 00:16:27,000
+Now we want to create a little bit of curve going across here as well,
+
+477
+00:16:27,000 --> 00:16:29,000
+I can select this whole edge going along here
+
+478
+00:16:29,000 --> 00:16:31,000
+by going to Edge Mode, and then Alt + left clicking
+
+479
+00:16:31,000 --> 00:16:33,000
+on the edge loop as it's known, that I want to select,
+
+480
+00:16:33,000 --> 00:16:35,000
+so Alt + left click to select those.
+
+481
+00:16:35,000 --> 00:16:37,000
+Incidentally, you can double left click if you're emulating
+
+482
+00:16:37,000 --> 00:16:39,000
+3-button mouse using a Mac or something like that,
+
+483
+00:16:39,000 --> 00:16:41,000
+and I can press GG to edge slide, so grab twice,
+
+484
+00:16:41,000 --> 00:16:43,000
+GG, edge slide that in,
+
+485
+00:16:43,000 --> 00:16:45,000
+and GG again to edge slide it back the other way,
+
+486
+00:16:45,000 --> 00:16:47,000
+and I'm moving my mouse to say which edge I want to slide across,
+
+487
+00:16:47,000 --> 00:16:49,000
+and I'm bringing that back down to somewhere around there.
+
+488
+00:16:49,000 --> 00:16:51,000
+And I can do the same with this one here,
+
+489
+00:16:51,000 --> 00:16:53,000
+the edge loop stops at poles, these are known as poles,
+
+490
+00:16:53,000 --> 00:16:55,000
+any vertex that hasn't got four edges going into it,
+
+491
+00:16:55,000 --> 00:16:57,000
+so when you select an edge loop, they stop at poles,
+
+492
+00:16:57,000 --> 00:16:59,000
+and now GG to slide that in, like so.
+
+493
+00:16:59,000 --> 00:17:01,000
+This one along here from here up to here,
+
+494
+00:17:01,000 --> 00:17:03,000
+so Alt + left click, GG to edge slide that in,
+
+495
+00:17:03,000 --> 00:17:05,000
+and we're slowly creating the shape of our animal.
+
+496
+00:17:05,000 --> 00:17:07,500
+So from this point on, it's a case of a little bit of sculpting,
+
+497
+00:17:07,500 --> 00:17:09,800
+I guess, by moving vertices around,
+
+498
+00:17:09,800 --> 00:17:12,000
+it does take a bit of experience to get this correct,
+
+499
+00:17:12,000 --> 00:17:14,000
+but that's kind of the artistic side
+
+500
+00:17:14,000 --> 00:17:16,000
+that will take a bit of time to learn,
+
+501
+00:17:16,000 --> 00:17:18,000
+but you can follow along with me.
+
+502
+00:17:18,000 --> 00:17:20,000
+So again, I'll press GG on this one, GG to slide it back up,
+
+503
+00:17:20,000 --> 00:17:22,000
+so there's a bit more of a curve going around here.
+
+504
+00:17:22,000 --> 00:17:24,000
+Now the face is the correct size here,
+
+505
+00:17:24,000 --> 00:17:26,000
+but a bit fat at the front here, so to Face Mode,
+
+506
+00:17:26,000 --> 00:17:28,000
+and I'll select these two faces just here and here,
+
+507
+00:17:28,000 --> 00:17:30,000
+G to grab in the X and bring those in.
+
+508
+00:17:30,000 --> 00:17:32,000
+It's not looking too bad there, that will need a bit of tidy up,
+
+509
+00:17:32,000 --> 00:17:34,000
+and at the back here, we'll need to curve this around,
+
+510
+00:17:34,000 --> 00:17:36,000
+and we can curve the legs round in the same way,
+
+511
+00:17:36,000 --> 00:17:38,000
+so 2 to go to Edge Mode, select that end edge,
+
+512
+00:17:38,000 --> 00:17:40,000
+GG to edge slide, and bring that towards the back,
+
+513
+00:17:40,000 --> 00:17:42,000
+I don't need to slide it forwards, just towards
+
+514
+00:17:42,000 --> 00:17:44,000
+the middle of my creature, the same with these,
+
+515
+00:17:44,000 --> 00:17:46,000
+here, GG, slide those in,
+
+516
+00:17:46,000 --> 00:17:48,000
+towards the middle, this one here, GG,
+
+517
+00:17:48,000 --> 00:17:50,000
+slide away from the middle there,
+
+518
+00:17:50,000 --> 00:17:52,000
+and it creates some curve to the leg, and this one here,
+
+519
+00:17:52,000 --> 00:17:54,000
+GG, sliding back out,
+
+520
+00:17:54,000 --> 00:17:56,000
+so we've got some rounded legs there,
+
+521
+00:17:56,000 --> 00:17:58,000
+that's why I had this extra loop cut
+
+522
+00:17:58,000 --> 00:18:00,000
+going through the middle here, so we could create some curve,
+
+523
+00:18:00,000 --> 00:18:02,000
+otherwise you come out with very square legs.
+
+524
+00:18:02,000 --> 00:18:04,000
+And remember we started with two faces just here at the bottom,
+
+525
+00:18:04,000 --> 00:18:06,000
+and we did the same for the front, so I'll do exactly the same there,
+
+526
+00:18:06,000 --> 00:18:08,000
+so GG, with that edge loop selected,
+
+527
+00:18:08,000 --> 00:18:10,000
+select this edge loop, GG, bring that in,
+
+528
+00:18:10,000 --> 00:18:12,000
+and this one here, GG to edge slide,
+
+529
+00:18:12,000 --> 00:18:14,000
+and this one here, GG to edge slide.
+
+530
+00:18:14,000 --> 00:18:16,000
+And now we're starting to get the shape a bit more.
+
+531
+00:18:16,000 --> 00:18:18,000
+Probably need a bit more rounded shape
+
+532
+00:18:18,000 --> 00:18:20,000
+from the top from here down to here,
+
+533
+00:18:20,000 --> 00:18:22,000
+so I'll GG to slide that in,
+
+534
+00:18:22,000 --> 00:18:24,000
+it's very flat-bummed, so I'm going to select
+
+535
+00:18:24,000 --> 00:18:26,000
+this just single vertex here, and slide that in,
+
+536
+00:18:26,000 --> 00:18:28,000
+and I'll slide these along so it's a bit more even,
+
+537
+00:18:28,000 --> 00:18:30,000
+these two here, I'll just grab them, move them forward,
+
+538
+00:18:30,000 --> 00:18:32,000
+and that's looking about right. And this one in here,
+
+539
+00:18:32,000 --> 00:18:34,000
+G to grab in the Z, and bring that up,
+
+540
+00:18:34,000 --> 00:18:36,000
+so the legs come up into the middle there,
+
+541
+00:18:36,000 --> 00:18:38,000
+probably about right, and we're looking good.
+
+542
+00:18:38,000 --> 00:18:40,000
+So I'll just come out of X-ray mode and show you what we've got,
+
+543
+00:18:40,000 --> 00:18:42,000
+got quite a nice looking animal just there.
+
+544
+00:18:42,000 --> 00:18:44,000
+And now we need to add the detail on the head.
+
+545
+00:18:44,000 --> 00:18:46,000
+So let's zoom into the head a bit,
+
+546
+00:18:46,000 --> 00:18:48,000
+I think an extra loop cut across here will help us out,
+
+547
+00:18:48,000 --> 00:18:50,000
+so Ctrl + R, loop cut across there, let's go to side view,
+
+548
+00:18:50,000 --> 00:18:52,000
+and just marry that up a bit with the reference image,
+
+549
+00:18:52,000 --> 00:18:54,000
+so again, X-ray view, and move these in slightly,
+
+550
+00:18:54,000 --> 00:18:56,000
+move these ones across, and these ones
+
+551
+00:18:56,000 --> 00:18:58,000
+I can move around the eye, to give me some detail,
+
+552
+00:18:58,000 --> 00:19:00,000
+so I can bring out the eye from there, and let's bring these in,
+
+553
+00:19:00,000 --> 00:19:02,000
+just moving some of these vertices around.
+
+554
+00:19:02,000 --> 00:19:04,000
+If your camera goes into a weird position, press period key,
+
+555
+00:19:04,000 --> 00:19:06,000
+and it zooms in on the object,
+
+556
+00:19:06,000 --> 00:19:08,000
+let's take a quick look at the reference in front view.
+
+557
+00:19:08,000 --> 00:19:10,000
+It can be quite tricky to line up your vertices,
+
+558
+00:19:10,000 --> 00:19:12,000
+so you might just need to move out of front view slightly,
+
+559
+00:19:12,000 --> 00:19:14,000
+look around a bit, again, press period key on your numpad
+
+560
+00:19:14,000 --> 00:19:16,000
+to zoom in and frame selected, you can find that under the View menu there,
+
+561
+00:19:16,000 --> 00:19:18,000
+Frame Selected, and then I can bring these in,
+
+562
+00:19:18,000 --> 00:19:20,000
+so G then X, bring those in,
+
+563
+00:19:20,000 --> 00:19:22,000
+and let me just look at front view again,
+
+564
+00:19:22,000 --> 00:19:24,000
+this is the muzzle just here, bring those in, that looks good,
+
+565
+00:19:24,000 --> 00:19:26,000
+this is the cheek just here by the looks of things,
+
+566
+00:19:26,000 --> 00:19:28,000
+so I've just got to think how wide I want that to be,
+
+567
+00:19:28,000 --> 00:19:30,000
+it might be about right, possibly a little bit wider,
+
+568
+00:19:30,000 --> 00:19:32,000
+so let's just go back to front view, yeah, looks a little bit wide there,
+
+569
+00:19:32,000 --> 00:19:34,000
+this needs to come up actually, so I might need to do
+
+570
+00:19:34,000 --> 00:19:36,000
+some extra topology for the eyes, as I was talking about earlier,
+
+571
+00:19:36,000 --> 00:19:38,000
+oh, and the horns need to come out of here, don't they, so I do need to come up a bit,
+
+572
+00:19:38,000 --> 00:19:40,000
+horns from here, and the ears from here, so we're going to need a little bit more
+
+573
+00:19:40,000 --> 00:19:42,000
+movement there, coming outwards,
+
+574
+00:19:42,000 --> 00:19:44,000
+but the rest looks okay. And again, you'll need to move around a fair bit,
+
+575
+00:19:44,000 --> 00:19:46,000
+I'm reasonably experienced when it comes to understanding
+
+576
+00:19:46,000 --> 00:19:48,000
+what vertices and so forth I'm selecting,
+
+577
+00:19:48,000 --> 00:19:50,000
+so you might need to do a little bit of moving around
+
+578
+00:19:50,000 --> 00:19:52,000
+more than I am here, but I think I'm roughly there with the shape.
+
+579
+00:19:52,000 --> 00:19:54,000
+Oh, and these faces here need to come in a bit,
+
+580
+00:19:54,000 --> 00:19:56,000
+so I've drawn that line there, that's the front shoulder,
+
+581
+00:19:56,000 --> 00:19:58,000
+I guess, so I can bring these in, G to grab,
+
+582
+00:19:58,000 --> 00:20:00,000
+bring those in, somewhere around there, that looks good,
+
+583
+00:20:00,000 --> 00:20:02,000
+and these ones here, I think they need to go in,
+
+584
+00:20:02,000 --> 00:20:04,000
+so not those ones though, G then X, remember to Ctrl + box select
+
+585
+00:20:04,000 --> 00:20:06,000
+to deselect objects, and that's looking relatively good,
+
+586
+00:20:06,000 --> 00:20:08,000
+maybe a little bit more of a chest though, G then X, bring those out,
+
+587
+00:20:08,000 --> 00:20:10,000
+and I'll bring those in, just so it's even.
+
+588
+00:20:10,000 --> 00:20:12,000
+We're roughly getting there, I would say.
+
+589
+00:20:12,000 --> 00:20:14,000
+I might want to even these out a little bit, so GG to edge slide,
+
+590
+00:20:14,000 --> 00:20:16,000
+to create some sort of smoothness between them,
+
+591
+00:20:16,000 --> 00:20:18,000
+and can you see how evening those out made it a bit smoother
+
+592
+00:20:18,000 --> 00:20:20,000
+around there. If you're following along with me, then you might want to pause the video here,
+
+593
+00:20:20,000 --> 00:20:22,000
+and just catch up, and do save your work at this point.
+
+594
+00:20:22,000 --> 00:20:24,000
+Okay, so let's think about the eye,
+
+595
+00:20:24,000 --> 00:20:26,000
+so let me go to side view, and in order to do the eye,
+
+596
+00:20:26,000 --> 00:20:28,000
+it's a bit tricky, this one, so in Face Mode,
+
+597
+00:20:28,000 --> 00:20:30,000
+select the face there, and I I to inset
+
+598
+00:20:30,000 --> 00:20:32,000
+and bring a face out like so,
+
+599
+00:20:32,000 --> 00:20:34,000
+and I can start moving these a bit closer
+
+600
+00:20:34,000 --> 00:20:36,000
+into position, and then I can move those
+
+601
+00:20:36,000 --> 00:20:38,000
+to the front there, scale those down, move that to the back,
+
+602
+00:20:38,000 --> 00:20:40,000
+and I might have an eye just there,
+
+603
+00:20:40,000 --> 00:20:42,000
+it's not too bad, it looks a little bit like it's coming inwards,
+
+604
+00:20:42,000 --> 00:20:44,000
+and it probably needs to come outwards, so I'll go to front view,
+
+605
+00:20:44,000 --> 00:20:46,000
+see where the eye position is there, it's slightly misaligned
+
+606
+00:20:46,000 --> 00:20:48,000
+on my reference, that's a bad drawing from me,
+
+607
+00:20:48,000 --> 00:20:50,000
+so let's just get that face just there,
+
+608
+00:20:50,000 --> 00:20:52,000
+back to front view, and I probably want that to come out like so,
+
+609
+00:20:52,000 --> 00:20:54,000
+and then rotate around the Z-axis, so it's slightly looking forward,
+
+610
+00:20:54,000 --> 00:20:56,000
+mainly to the side, but I'll scale that up,
+
+611
+00:20:56,000 --> 00:20:58,000
+rotate it just there, so it's looking forward a bit,
+
+612
+00:20:58,000 --> 00:21:00,000
+but mainly to the side, like so.
+
+613
+00:21:00,000 --> 00:21:02,000
+So we got a simple eye just there, and I'll just even this out,
+
+614
+00:21:02,000 --> 00:21:04,000
+so GG to edge slide that along.
+
+615
+00:21:04,000 --> 00:21:06,000
+Back to side view, and think about the ear, I think we can come out from
+
+616
+00:21:06,000 --> 00:21:08,000
+this face here, we might need an extra loop cut around here,
+
+617
+00:21:08,000 --> 00:21:10,000
+so let me do one more, so Ctrl + R to bring a loop cut along there,
+
+618
+00:21:10,000 --> 00:21:12,000
+select this one, and slide it along a bit, so GG,
+
+619
+00:21:12,000 --> 00:21:14,000
+I can use this, in fact, to help me just here,
+
+620
+00:21:14,000 --> 00:21:16,000
+in fact, an extra one in here would make sense, wouldn't it?
+
+621
+00:21:16,000 --> 00:21:18,000
+So Ctrl + R to do a loop cut, so I can just create a little bit more
+
+622
+00:21:18,000 --> 00:21:20,000
+shape in these areas, like so,
+
+623
+00:21:20,000 --> 00:21:22,000
+and I can smooth out at the top here if I want to,
+
+624
+00:21:22,000 --> 00:21:24,000
+I think actually I need to select from here to here,
+
+625
+00:21:24,000 --> 00:21:26,000
+I can Ctrl + left click to take the shortest path
+
+626
+00:21:26,000 --> 00:21:28,000
+between two points, and select everything in between,
+
+627
+00:21:28,000 --> 00:21:30,000
+and just slide those, GG, and slide them forward or back,
+
+628
+00:21:30,000 --> 00:21:32,000
+and these ones, probably up to here, GG to slide those down and back,
+
+629
+00:21:32,000 --> 00:21:34,000
+create a bit more roundness to the body,
+
+630
+00:21:34,000 --> 00:21:36,000
+and now I'm ready for the ear, just about anyway,
+
+631
+00:21:36,000 --> 00:21:38,000
+so probably need to come out somewhere around here, don't we?
+
+632
+00:21:38,000 --> 00:21:40,000
+Might need to move these ones up a little bit, that area there,
+
+633
+00:21:40,000 --> 00:21:42,000
+so let's just choose that face, so that one just there,
+
+634
+00:21:42,000 --> 00:21:44,000
+looks a bit high, let me look from front view as well,
+
+635
+00:21:44,000 --> 00:21:46,000
+yeah, let's bring that out slightly, rotate it around,
+
+636
+00:21:46,000 --> 00:21:48,000
+so you rotate perpendicular to the camera,
+
+637
+00:21:48,000 --> 00:21:50,000
+I might inset it first, so I to inset,
+
+638
+00:21:50,000 --> 00:21:52,000
+so I've got a new face there that I can come out from,
+
+639
+00:21:52,000 --> 00:21:54,000
+and then I can just sort of bring that out really slightly,
+
+640
+00:21:54,000 --> 00:21:56,000
+and then E to extrude for the ear, like so,
+
+641
+00:21:56,000 --> 00:21:58,000
+and then E to extrude again, scale that down,
+
+642
+00:21:58,000 --> 00:22:00,000
+we've got a very basic ear there, I'll just bring this up,
+
+643
+00:22:00,000 --> 00:22:02,000
+so it looks more ear shaped, like this,
+
+644
+00:22:02,000 --> 00:22:04,000
+and I might have to just even my topology out a little bit,
+
+645
+00:22:04,000 --> 00:22:06,000
+so very, very basic ear there, actually it looks like they face
+
+646
+00:22:06,000 --> 00:22:08,000
+forward more, doesn't it, on a little bit skewed with mine,
+
+647
+00:22:08,000 --> 00:22:10,000
+so again, select those faces there,
+
+648
+00:22:10,000 --> 00:22:12,000
+and rotate them round, again, you rotate perpendicular to the camera,
+
+649
+00:22:12,000 --> 00:22:14,000
+it's going to be a bit careful with this, can you see how
+
+650
+00:22:14,000 --> 00:22:16,000
+this particular face here is really, really skewed,
+
+651
+00:22:16,000 --> 00:22:18,000
+so I just need to bring this back to level and even it out slightly,
+
+652
+00:22:18,000 --> 00:22:20,000
+and we're going to need some space for the horns as well,
+
+653
+00:22:20,000 --> 00:22:22,000
+which is going to be interesting, so we're going to have to
+
+654
+00:22:22,000 --> 00:22:24,000
+create some space in here, and come out from this area, probably,
+
+655
+00:22:24,000 --> 00:22:26,000
+let's select that face, and then go to front view,
+
+656
+00:22:26,000 --> 00:22:28,000
+and that actually should work for the horn, let's go to side view and see how that marries up,
+
+657
+00:22:28,000 --> 00:22:30,000
+maybe not back far enough, that's the problem with that one,
+
+658
+00:22:30,000 --> 00:22:32,000
+actually looking at some reference images, looks like the horns
+
+659
+00:22:32,000 --> 00:22:34,000
+are actually in front there, just above the eyes,
+
+660
+00:22:34,000 --> 00:22:36,000
+in front of the ears, so actually this is great,
+
+661
+00:22:36,000 --> 00:22:38,000
+it's working out nicely, so I'll inset here,
+
+662
+00:22:38,000 --> 00:22:40,000
+and then bring out the horns, I'll inset with I, that is,
+
+663
+00:22:40,000 --> 00:22:42,000
+and then G to grab, lifting it up really slightly,
+
+664
+00:22:42,000 --> 00:22:44,000
+and then E to extrude outwards, bring that in,
+
+665
+00:22:44,000 --> 00:22:46,000
+ready for a horn to come out.
+
+666
+00:22:46,000 --> 00:22:48,000
+This is a tough one as well, the horns,
+
+667
+00:22:48,000 --> 00:22:50,000
+but if you E to extrude, you can come outwards slightly,
+
+668
+00:22:50,000 --> 00:22:52,000
+and then if you want a different direction,
+
+669
+00:22:52,000 --> 00:22:54,000
+so let's say you want to come out from here, E to extrude,
+
+670
+00:22:54,000 --> 00:22:56,000
+and scale down, and you can bring them out like so,
+
+671
+00:22:56,000 --> 00:22:58,000
+I'll just turn off X-ray, so you can kind of see what's going on here,
+
+672
+00:22:58,000 --> 00:23:00,000
+so I can scale that down, G to grab, move it up,
+
+673
+00:23:00,000 --> 00:23:02,000
+and then come back to this one here to extrude out further,
+
+674
+00:23:02,000 --> 00:23:04,000
+E to extrude, move that backwards this time, and rotate that around,
+
+675
+00:23:04,000 --> 00:23:06,000
+and that can come out this way, so E to extrude again,
+
+676
+00:23:06,000 --> 00:23:08,000
+scale down, try not to go too far, otherwise it inverts itself,
+
+677
+00:23:08,000 --> 00:23:10,000
+so scale that down like so, and then just rotate it round into different positions,
+
+678
+00:23:10,000 --> 00:23:12,000
+and I can press E to extrude a little bit, and then I can come out
+
+679
+00:23:12,000 --> 00:23:14,000
+from a different angle, so E to extrude and bring that out like so,
+
+680
+00:23:14,000 --> 00:23:16,000
+and then back to this one, E to extrude, scale down, and so forth,
+
+681
+00:23:16,000 --> 00:23:18,000
+so you can see how slowly I'm making some horns here.
+
+682
+00:23:18,000 --> 00:23:20,000
+Now remember, you can go to X-ray mode, select all,
+
+683
+00:23:20,000 --> 00:23:22,000
+and you can just scale them up very slightly,
+
+684
+00:23:22,000 --> 00:23:24,000
+if they're going a bit too thin, for example,
+
+685
+00:23:24,000 --> 00:23:26,000
+or you can select edge loops by going to Edge Mode,
+
+686
+00:23:26,000 --> 00:23:28,000
+select an edge loop, try and get the edge loop there, with Alt + left click,
+
+687
+00:23:28,000 --> 00:23:30,000
+and scale them up that way as well.
+
+688
+00:23:30,000 --> 00:23:32,000
+So back to Face Mode, and I'll extrude this out,
+
+689
+00:23:32,000 --> 00:23:34,000
+in fact, I'll just grab it up to here, extrude it out a little bit further,
+
+690
+00:23:34,000 --> 00:23:36,000
+and this one can come into the front here, so E to extrude,
+
+691
+00:23:36,000 --> 00:23:38,000
+and I'll just do a little bit of rotation here,
+
+692
+00:23:38,000 --> 00:23:40,000
+so come to the top view, remember you're rotating perpendicular to your camera,
+
+693
+00:23:40,000 --> 00:23:42,000
+this might need a fair bit of adaptation,
+
+694
+00:23:42,000 --> 00:23:44,000
+the horns are probably the hardest bit, I would say.
+
+695
+00:23:44,000 --> 00:23:46,000
+If you need to do any extra loop cuts, remember Ctrl + R,
+
+696
+00:23:46,000 --> 00:23:48,000
+you can use the wheel of your mouse as well, if you want to create a couple of loop cuts,
+
+697
+00:23:48,000 --> 00:23:50,000
+and then position those, and I can create a bit more of a curve
+
+698
+00:23:50,000 --> 00:23:52,000
+coming around like that.
+
+699
+00:23:52,000 --> 00:23:54,000
+And if you want another horn coming out from a certain area, then loop cut,
+
+700
+00:23:54,000 --> 00:23:56,000
+Face Mode, I'll just go back out of X-ray mode,
+
+701
+00:23:56,000 --> 00:23:58,000
+so you can see that more easily, E to extrude, and bring it out from these areas.
+
+702
+00:23:58,000 --> 00:24:00,000
+Might need a little bit more weight at the front here, so I'll just bring that back,
+
+703
+00:24:00,000 --> 00:24:02,000
+and you can just adjust your vertices slightly,
+
+704
+00:24:02,000 --> 00:24:04,000
+if you need to, a little bit oblong shape, so I'll bring those in.
+
+705
+00:24:04,000 --> 00:24:06,000
+These ones as well, just be careful not to box select
+
+706
+00:24:06,000 --> 00:24:08,000
+and select something behind, that can be really awkward.
+
+707
+00:24:08,000 --> 00:24:10,000
+Remember also if you're trying to select vertices in the background,
+
+708
+00:24:10,000 --> 00:24:12,000
+go to X-ray mode before doing that.
+
+709
+00:24:12,000 --> 00:24:14,000
+And let's see how we're getting on.
+
+710
+00:24:14,000 --> 00:24:16,000
+That's not too bad at the moment.
+
+711
+00:24:16,000 --> 00:24:18,000
+Needs a bit of adjustment and rounding out,
+
+712
+00:24:18,000 --> 00:24:20,000
+particularly the front here, you can select a vertex
+
+713
+00:24:20,000 --> 00:24:22,000
+and Ctrl + select another vertex that's further down,
+
+714
+00:24:22,000 --> 00:24:24,000
+and it takes the shortest path, so Ctrl + left click,
+
+715
+00:24:24,000 --> 00:24:26,000
+so if I Ctrl + left click here, it'll take the shortest path,
+
+716
+00:24:26,000 --> 00:24:28,000
+and I can GG to slide that back,
+
+717
+00:24:28,000 --> 00:24:30,000
+probably bring these forward, and this one back a bit more,
+
+718
+00:24:30,000 --> 00:24:32,000
+and this one back a bit more, looks quite wide-mouthed, doesn't it?
+
+719
+00:24:32,000 --> 00:24:34,000
+I'm going to bring these in a bit, in fact, from here to here,
+
+720
+00:24:34,000 --> 00:24:36,000
+no, from here to here, GG, bring those back in.
+
+721
+00:24:36,000 --> 00:24:38,000
+Go to front view, X-ray mode, to just have a quick look at my references,
+
+722
+00:24:38,000 --> 00:24:40,000
+yeah, I feel like these need to come in a bit,
+
+723
+00:24:40,000 --> 00:24:42,000
+just make sure you don't select anything in the back there,
+
+724
+00:24:42,000 --> 00:24:44,000
+and bring those in.
+
+725
+00:24:44,000 --> 00:24:46,000
+I think we're slowly getting there, I would say.
+
+726
+00:24:46,000 --> 00:24:48,000
+I might want to even these out a little bit, so GG to edge slide,
+
+727
+00:24:48,000 --> 00:24:50,000
+to create some sort of smoothness between them,
+
+728
+00:24:50,000 --> 00:24:52,000
+and can you see how evening those out made it a bit smoother around there.
+
+729
+00:24:52,000 --> 00:24:54,000
+If you're following along with me, then you might want to pause the video here,
+
+730
+00:24:54,000 --> 00:24:56,000
+and just catch up, and do save your work at this point.
+
+731
+00:24:56,000 --> 00:24:58,000
+Okay, so let me think about the tail then for the modeling,
+
+732
+00:24:58,000 --> 00:25:00,000
+so I'll come to the back here, 3 to get Face Mode,
+
+733
+00:25:00,000 --> 00:25:02,000
+select this end face here, and I'll inset it,
+
+734
+00:25:02,000 --> 00:25:04,000
+so I to inset, if you press B for boundary,
+
+735
+00:25:04,000 --> 00:25:06,000
+that will turn off the boundary that is
+
+736
+00:25:06,000 --> 00:25:08,000
+the mirror just here, so we can make sure it's linked together
+
+737
+00:25:08,000 --> 00:25:10,000
+with the other side, bring that up, and then
+
+738
+00:25:10,000 --> 00:25:12,000
+I'll scale it down a bit more, and then E to extrude,
+
+739
+00:25:12,000 --> 00:25:14,000
+and then just tidy up a little bit here, so smooth it out a bit,
+
+740
+00:25:14,000 --> 00:25:16,000
+and then select the end, Face Mode, and extrude that out,
+
+741
+00:25:16,000 --> 00:25:18,000
+let's go to side view so I can see it,
+
+742
+00:25:18,000 --> 00:25:20,000
+and we got a really basic tail just there.
+
+743
+00:25:20,000 --> 00:25:22,000
+Again, a bit of smoothing, just by edge sliding,
+
+744
+00:25:22,000 --> 00:25:24,000
+you can smooth these things out, as you can see there.
+
+745
+00:25:24,000 --> 00:25:25,500
+So GG for edge slide.
+
+746
+00:25:25,500 --> 00:25:27,500
+Okay, so we've got the basic model there,
+
+747
+00:25:27,500 --> 00:25:29,500
+I'll do a little bit of tidying up, and I'll speed up the footage,
+
+748
+00:25:29,500 --> 00:25:31,500
+I'll just sort the antlers out a little bit.
+
+749
+00:25:31,500 --> 00:25:33,500
+The antlers on my reference are much bigger,
+
+750
+00:25:33,500 --> 00:25:35,500
+so I might make them a bit bigger in fact.
+
+751
+00:25:35,500 --> 00:25:37,500
+Every now and again, you might want to go back to solid mode as well,
+
+752
+00:25:37,500 --> 00:25:39,500
+just to see how the shape's looking, and I think that's looking
+
+753
+00:25:39,500 --> 00:25:41,500
+relatively good, just going to curve these out a little bit more.
+
+754
+00:25:41,500 --> 00:25:43,500
+And again, to smooth areas out, GG to edge slide
+
+755
+00:25:43,500 --> 00:25:45,500
+them along, and that generally smoothes them out quite well.
+
+756
+00:25:45,500 --> 00:25:47,500
+Period key to zoom in on a certain area, so if course,
+
+757
+00:25:47,500 --> 00:25:49,500
+you might want to pause the video here, catch up with me,
+
+758
+00:25:49,500 --> 00:25:51,500
+making sure that you've got the right outline of your shape,
+
+759
+00:25:51,500 --> 00:25:53,500
+and then we'll move together to the shading.
+
+760
+00:25:53,500 --> 00:25:55,500
+Although my final render was black and white,
+
+761
+00:25:55,500 --> 00:25:57,500
+you might want to do some shading, so let's go to the Shading workspace,
+
+762
+00:25:57,500 --> 00:25:59,500
+so I can show you how to add colors to your stag.
+
+763
+00:25:59,500 --> 00:26:01,500
+So, in order to do the shading, we go across to the Shading workspace
+
+764
+00:26:01,500 --> 00:26:03,500
+at the top here, I'll zoom in on my stag,
+
+765
+00:26:03,500 --> 00:26:05,500
+I don't really need the references anymore, so I can again,
+
+766
+00:26:05,500 --> 00:26:07,500
+bring down the Outliner and hide the references there,
+
+767
+00:26:07,500 --> 00:26:09,500
+and I've got my stag just here.
+
+768
+00:26:09,500 --> 00:26:11,500
+Now to start with, we can give the stag a nice brown material,
+
+769
+00:26:11,500 --> 00:26:13,500
+we've got the default material here, if you can't see one,
+
+770
+00:26:13,500 --> 00:26:15,500
+you might see something, if I close this down, like this,
+
+771
+00:26:15,500 --> 00:26:17,500
+then just click on New Material, that's fine.
+
+772
+00:26:17,500 --> 00:26:19,500
+I'll call this "Brown", in fact, I'll call it "Light Brown",
+
+773
+00:26:19,500 --> 00:26:21,500
+so this can be the main color of the stag,
+
+774
+00:26:21,500 --> 00:26:23,500
+so I might choose a dark brown later on, and add those
+
+775
+00:26:23,500 --> 00:26:25,500
+perhaps to the hooves and things. Base Color just here,
+
+776
+00:26:25,500 --> 00:26:27,500
+I can click on that, and change it across to the brown,
+
+777
+00:26:27,500 --> 00:26:29,500
+so that's across to the oranges, and then bring the Value down,
+
+778
+00:26:29,500 --> 00:26:31,500
+and that creates brown, so a fairly orangey brown,
+
+779
+00:26:31,500 --> 00:26:33,500
+maybe a little bit less saturated, so in towards the middle
+
+780
+00:26:33,500 --> 00:26:35,500
+of the circle for less saturation, you can actually use a slider
+
+781
+00:26:35,500 --> 00:26:37,500
+down here as well, all the time I'm looking at this color here.
+
+782
+00:26:37,500 --> 00:26:39,500
+And to me, that looks roughly right.
+
+783
+00:26:39,500 --> 00:26:41,500
+It's very shiny, as you can see, and fur isn't particularly reflective,
+
+784
+00:26:41,500 --> 00:26:43,500
+so we can bring up the Roughness of that, and already
+
+785
+00:26:43,500 --> 00:26:45,500
+that's looking quite nice. We want a few areas though where it's darker,
+
+786
+00:26:45,500 --> 00:26:47,500
+as I was saying, so you might want to look at some references for this,
+
+787
+00:26:47,500 --> 00:26:49,500
+but the horns might be a bit more gray, so I'll zoom in on those,
+
+788
+00:26:49,500 --> 00:26:51,500
+go to Edit Mode, and I want to add a new color
+
+789
+00:26:51,500 --> 00:26:53,500
+to the horns. Now in order to do this, we need to add a new material
+
+790
+00:26:53,500 --> 00:26:55,500
+slot just here, so under the slots, in the drop down,
+
+791
+00:26:55,500 --> 00:26:57,500
+we add a new material, and you can see a new material
+
+792
+00:26:57,500 --> 00:26:59,500
+being created there, and we've got a button at the bottom where we can assign it
+
+793
+00:26:59,500 --> 00:27:01,500
+to certain faces, so I'll just select those faces that I want,
+
+794
+00:27:01,500 --> 00:27:03,500
+Alt + Z to go to X-ray mode, 3 to go to Face Mode,
+
+795
+00:27:03,500 --> 00:27:05,500
+and I'll try and select those faces, you can Ctrl + right click
+
+796
+00:27:05,500 --> 00:27:07,500
+to lasso select like that, and you can generally get
+
+797
+00:27:07,500 --> 00:27:09,500
+a better selection, and I got a bit lucky there and got them all.
+
+798
+00:27:09,500 --> 00:27:11,500
+So that's good, got my horns just there, and I want to
+
+799
+00:27:11,500 --> 00:27:13,500
+under the slots, assign those to Slot 2.
+
+800
+00:27:13,500 --> 00:27:15,500
+So at the moment, they go white because there is no texture
+
+801
+00:27:15,500 --> 00:27:17,500
+in Slot 2, so it creates a default texture,
+
+802
+00:27:17,500 --> 00:27:19,500
+so we need to add in Slot 2 a new material just here,
+
+803
+00:27:19,500 --> 00:27:21,500
+and this one I'll call "Dark Brown", and again,
+
+804
+00:27:21,500 --> 00:27:23,500
+I'll go across to the browns, I'll just make it slightly darker,
+
+805
+00:27:23,500 --> 00:27:25,500
+and you should be able to see that it's changing the horns
+
+806
+00:27:25,500 --> 00:27:27,500
+just there, and that's great. Let's go out of Edit Mode,
+
+807
+00:27:27,500 --> 00:27:29,500
+and just see what that looks like, that's looking good.
+
+808
+00:27:29,500 --> 00:27:31,500
+Let's create a darker material still for things like the eyes.
+
+809
+00:27:31,500 --> 00:27:33,500
+So again, into Edit Mode, I can select both those eyes,
+
+810
+00:27:33,500 --> 00:27:35,500
+create a new slot, so under my slots, New Slot,
+
+811
+00:27:35,500 --> 00:27:37,500
+and we got a new material slot there, we're going to assign it,
+
+812
+00:27:37,500 --> 00:27:39,500
+and it goes white because there's no material,
+
+813
+00:27:39,500 --> 00:27:41,500
+so let's add a new material, and I'll call this, in fact,
+
+814
+00:27:41,500 --> 00:27:43,500
+let's call it "Black", and we'll add a black color this time,
+
+815
+00:27:43,500 --> 00:27:45,500
+so this time, Base Color, bring it down almost to black,
+
+816
+00:27:45,500 --> 00:27:47,500
+I don't like to go completely black, a little bit across the browns,
+
+817
+00:27:47,500 --> 00:27:49,500
+and very dark just there, and we got an almost black,
+
+818
+00:27:49,500 --> 00:27:51,500
+and you can see that eye just there.
+
+819
+00:27:51,500 --> 00:27:53,500
+Remember these particular materials have a different Roughness
+
+820
+00:27:53,500 --> 00:27:55,500
+to the light brown, so let's go back to the dark brown just here,
+
+821
+00:27:55,500 --> 00:27:57,500
+and let's say I want to change the dark brown,
+
+822
+00:27:57,500 --> 00:27:59,500
+give that a little bit more Roughness, so it's not so shiny,
+
+823
+00:27:59,500 --> 00:28:01,500
+and that looks good. The eyes though, makes sense
+
+824
+00:28:01,500 --> 00:28:03,500
+to have them shiny, and that's looking quite good,
+
+825
+00:28:03,500 --> 00:28:05,500
+and that's great, I can now start adding texture to the other areas,
+
+826
+00:28:05,500 --> 00:28:07,500
+so at the front here, we might want it the same color as the eyes,
+
+827
+00:28:07,500 --> 00:28:09,500
+now, let's just quickly go to front view,
+
+828
+00:28:09,500 --> 00:28:11,500
+and bring back my reference, Alt + Z to get to X-ray mode.
+
+829
+00:28:11,500 --> 00:28:13,500
+Now I'm in X-ray mode, but you can't actually see the background,
+
+830
+00:28:13,500 --> 00:28:15,500
+so I will need to go to probably Wireframe mode this time,
+
+831
+00:28:15,500 --> 00:28:17,500
+and you can see the shape of the nose just there,
+
+832
+00:28:17,500 --> 00:28:19,500
+it's not the full shape that I've got it at the moment,
+
+833
+00:28:19,500 --> 00:28:21,500
+so we'll probably going to need to use the knife tool for this again,
+
+834
+00:28:21,500 --> 00:28:23,500
+so I'll go back to Solid mode with X-ray turned on,
+
+835
+00:28:23,500 --> 00:28:25,500
+in fact, let's turn X-ray off, and I'll just draw in
+
+836
+00:28:25,500 --> 00:28:27,500
+with the knife tool, so K for the knife tool,
+
+837
+00:28:27,500 --> 00:28:29,500
+from about here, and I'll just create the shape
+
+838
+00:28:29,500 --> 00:28:31,500
+down to here, I think, so press Enter,
+
+839
+00:28:31,500 --> 00:28:33,500
+and I've got the shape just there. Didn't go all the way to the middle there,
+
+840
+00:28:33,500 --> 00:28:35,500
+actually, so K for the knife tool and I can just create a cut across there,
+
+841
+00:28:35,500 --> 00:28:37,500
+press Enter, I can actually get rid of this edge here, so 2 to Edge Mode,
+
+842
+00:28:37,500 --> 00:28:39,500
+select that edge, and press Ctrl + X to dissolve.
+
+843
+00:28:39,500 --> 00:28:41,500
+So I've got that nose at the front there, and I actually want a mouth as well,
+
+844
+00:28:41,500 --> 00:28:43,500
+so I'm going to do that as well, K for knife tool,
+
+845
+00:28:43,500 --> 00:28:45,500
+I can come across here, and you can go through two at the same time,
+
+846
+00:28:45,500 --> 00:28:47,500
+like so, and back again to there, and press Enter,
+
+847
+00:28:47,500 --> 00:28:49,500
+so I've got a basic mouth, looks like they're smiling there, though,
+
+848
+00:28:49,500 --> 00:28:51,500
+so I might have to come in here, K for knife tool,
+
+849
+00:28:51,500 --> 00:28:53,500
+and just make it a bit more square, like that,
+
+850
+00:28:53,500 --> 00:28:55,500
+so it's not smiling, select this edge, Ctrl + X to dissolve it,
+
+851
+00:28:55,500 --> 00:28:57,500
+and we've got the basics of our mouth just there.
+
+852
+00:28:57,500 --> 00:28:59,500
+So I can select those faces, so Face Mode, select those faces,
+
+853
+00:28:59,500 --> 00:29:01,500
+I'm in Solid mode at the moment, Material Preview mode will show
+
+854
+00:29:01,500 --> 00:29:03,500
+my actual materials just here, and then I can give those
+
+855
+00:29:03,500 --> 00:29:05,500
+the Black texture just here, so Black and Assign,
+
+856
+00:29:05,500 --> 00:29:07,500
+out of Edit Mode so I can see the results, that looks relatively good there.
+
+857
+00:29:07,500 --> 00:29:09,500
+So that should give you enough idea about how to add color
+
+858
+00:29:09,500 --> 00:29:11,500
+or materials to your object, and assign them to different faces.
+
+859
+00:29:11,500 --> 00:29:13,500
+Again, if you want to learn more about how to pose the animal,
+
+860
+00:29:13,500 --> 00:29:15,500
+then do check out the Members' area of this channel,
+
+861
+00:29:15,500 --> 00:29:17,500
+and if you like this sort of content, then do check out my low poly
+
+862
+00:29:17,500 --> 00:29:19,500
+character course. Alternatively, there's lots of good playlists
+
+863
+00:29:19,500 --> 00:29:21,500
+on this channel, I would recommend the Low Poly Whale
+
+864
+00:29:21,500 --> 00:29:23,500
+as your next tutorial series, so why not check that out?
+
+865
+00:29:23,500 --> 00:29:25,500
+If you've got any questions, then do comment below.
+
+866
+00:29:25,500 --> 00:29:27,500
+Thanks for watching, and I'll see you next time.
