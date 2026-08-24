@@ -1,10 +1,10 @@
 bl_info = {
     "name": "Low Poly Deer Tutorial",
     "author": "Indy's Roxon",
-    "version": (1, 0, 0),
+    "version": (1, 1, 0),
     "blender": (5, 0, 0),
     "location": "N-Panel > Low Poly Deer",
-    "description": "Interactive step-by-step tutorial for low poly character modeling",
+    "description": "Interactive step-by-step tutorial for low poly character modeling with image previews",
     "category": "Tutorials",
 }
 
@@ -315,7 +315,7 @@ TUTORIAL_STEPS = [
 ]
 
 # ============================================================================
-# HELPER FUNCTIONS - Store progress as binary string (workaround for Blender 5.2)
+# HELPER FUNCTIONS
 # ============================================================================
 
 def encode_progress(bool_list):
@@ -329,8 +329,31 @@ def decode_progress(binary_str):
         return [False] * 42
     return [c == '1' for c in binary_str]
 
+def get_image_path(folder_path, step_index):
+    """Get full path to image file"""
+    if not folder_path:
+        return None
+    step = TUTORIAL_STEPS[step_index]
+    image_path = os.path.join(folder_path, step['image_name'])
+    if os.path.exists(image_path):
+        return image_path
+    return None
+
+def load_image_as_icon(image_path):
+    """Load image as Blender icon for UI display"""
+    try:
+        # Try to load image into Blender's image data-blocks
+        if image_path in bpy.data.images:
+            img = bpy.data.images[image_path]
+        else:
+            img = bpy.data.images.load(image_path, check_existing=True)
+        return img
+    except Exception as e:
+        print(f"Error loading image {image_path}: {e}")
+        return None
+
 # ============================================================================
-# PROPERTY GROUP FOR PERSISTENT STEP TRACKING
+# PROPERTY GROUP
 # ============================================================================
 
 class TutorialStepProperties(PropertyGroup):
@@ -415,7 +438,7 @@ class LPDT_OT_set_image_folder(Operator):
     def execute(self, context):
         props = context.scene.lpdt_props
         props.image_folder_path = self.directory
-        self.report({'INFO'}, f"Image folder set to: {self.directory}")
+        self.report({'INFO'}, f"Image folder set. Found images will display below.")
         return {'FINISHED'}
     
     def invoke(self, context, event):
@@ -500,10 +523,19 @@ class LPDT_PT_tutorial_panel(Panel):
         box.label(text="Reference Image", icon='IMAGE_DATA')
         
         if props.image_folder_path:
-            image_path = os.path.join(props.image_folder_path, step['image_name'])
-            if os.path.exists(image_path):
-                row = box.row()
-                row.label(text=f"✓ {step['image_name']}", icon='CHECKMARK')
+            image_path = get_image_path(props.image_folder_path, props.current_step - 1)
+            if image_path:
+                try:
+                    # Load and display the image
+                    img = load_image_as_icon(image_path)
+                    if img:
+                        # Display image with preview
+                        row = box.row()
+                        row.template_icon(icon_value=img.preview.icon_id, scale=15.0)
+                        row.label(text=f"✓ {step['image_name']}", icon='CHECKMARK')
+                except Exception as e:
+                    row = box.row()
+                    row.label(text=f"Image: {step['image_name']}", icon='IMAGE_DATA')
             else:
                 row = box.row()
                 row.label(text=f"✗ {step['image_name']} not found", icon='ERROR')
